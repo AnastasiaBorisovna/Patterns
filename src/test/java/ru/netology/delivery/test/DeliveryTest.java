@@ -52,6 +52,7 @@ class DeliveryTest {
         $(".notification__content")
                 .shouldHave(Condition.text("Встреча успешно запланирована на " + secondMeetingDate), Duration.ofSeconds(15))
                 .shouldBe(Condition.visible);
+
         // TODO: добавить логику теста в рамках которого будет выполнено планирование и перепланирование встречи.
         // Для заполнения полей формы можно использовать пользователя validUser и строки с датами в переменных
         // firstMeetingDate и secondMeetingDate. Можно также вызывать методы generateCity(locale),
